@@ -1,0 +1,379 @@
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: NB;
+    src: url(./fonts/NBInternationalProBoo.woff2);
+}
+
+@font-face {
+    font-family: RE;
+    src: url(./fonts/Rejouice-Headline.woff2);
+}
+
+
+/* font-family: Hitmarker Text; */
+/* font-family: Hitmarker Condensed; */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: Poppins;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+#page1 {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page1 nav {
+    height: 15vh;
+    width: 90%;
+    /* background-color: #243137; */
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    border-bottom: 3px solid #fff;
+
+}
+
+nav .logo {
+    /* text-align: center; */
+    height: 4vw;
+    width: 8vw;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.logo span {
+    margin-top: 1vw;
+    margin-left: 6vw;
+}
+
+nav i {
+    display: none;
+}
+
+nav .logo h2 {
+    color: white;
+    font-family: NB;
+
+}
+
+nav .links {
+    display: flex;
+    gap: 2vw;
+    font-family: NB;
+    font-size: 1.3vw;
+
+
+}
+
+.links h4 {
+    font-weight: 300;
+
+}
+
+.links a {
+    transition: all ease 0.3s;
+}
+
+nav .links a:hover {
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+.resbtn {
+    display: none;
+}
+
+.res-nav {
+    position: absolute;
+    top: -150%;
+    left: 0;
+    width: 90%;
+    background-color: #f0f0f0;
+    transition: none;
+    height: 50vh;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+}
+
+.res-nav a {
+    color: black;
+    font-size: 4.6vw;
+
+}
+
+.heading {
+    height: 6vh;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 1.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h2 {
+    font-size: 2vw;
+    border-bottom: 1px solid white;
+
+}
+
+
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.carousel {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.carousel-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 100px;
+    top: 50px;
+    border: 2px solid #fff;
+    overflow: hidden;
+    transition: transform 1s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    nav .links a {
+        display: none;
+    }
+
+    nav .links i {
+        display: block;
+        font-size: 9vw;
+    }
+
+    nav .logo h2 {
+        color: white;
+        font-family: NB;
+        font-size: 6.5vw;
+    }
+
+    .resbtn {
+        display: block;
+    }
+
+    nav .logo {
+        /* text-align: center; */
+        height: 19vw;
+        width: 36vw;
+    }
+
+    .main {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+        }
+    }
+    #page2{
+        margin-top: 30vw;
+        height: 40vh;
+    }
+    .carousel-item {
+        /* position: absolute; */
+        width: 50vw;
+        height: 25vh;
+    }
+    .heading h2{
+        font-size: 7vw;
+    }
+   
+
+
+}
