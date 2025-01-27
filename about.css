@@ -143,7 +143,7 @@ nav .links a:hover {
 
 }
 #page2{
-    height: 80vh;
+    min-height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -471,7 +471,7 @@ nav .links a:hover {
 
 
 .visiondiv{
-    height: 44vh;
+   height: 44vh;
     width: 100%;
     /* background-color: grey; */
     display: flex;
@@ -479,9 +479,11 @@ nav .links a:hover {
     justify-content: center;
     /* align-items: center; */
     gap: 2vw;
+
+  
 }
 .vision{
-    height: 30vh;
+    height: 40vh;
     width: 45%;
     background-color: #011627;
     padding: 1.2vw;
@@ -783,7 +785,7 @@ footer {
     }
     .card{
         min-height: 18em;
-        width: 25em;
+        width: 21em;
     }
     .card .info {
         font-weight: 400;
@@ -812,13 +814,13 @@ footer {
     .visiondiv{
         height: 80vh;
         flex-direction: column;
-        margin-top: 7vw;
+        gap: 4vw;
     }
     .vision{
         width: 100%;
     }
     .mission{
-        margin-top: 2vw;
+        margin-top: 5vw;
         width: 100%;
     }
     .bottom_content i {
