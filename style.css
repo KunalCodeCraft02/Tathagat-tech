@@ -33,7 +33,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #121619;
+    background-color: #353535;
     color: white;
     font-family: Poppins;
     overflow-x: hidden;
@@ -72,8 +72,8 @@ body::-webkit-scrollbar {
 
 nav .logo {
     /* text-align: center; */
-    height: 4vw;
-    width: 8vw;
+    height: 8vw;
+    width: 10vw;
 }
 
 .logo img {
@@ -365,7 +365,7 @@ nav .links a:hover {
 }
 
 .img-div {
-    height: 60vh;
+    min-height: 63vh;
     width: 100%;
     /* background-color: antiquewhite; */
     display: flex;
@@ -378,7 +378,7 @@ nav .links a:hover {
 }
 
 .img-div .imgbox {
-    height: 55vh;
+    min-height: 60vh;
     width: 28%;
     background-color: #333;
     position: relative;
@@ -407,11 +407,15 @@ nav .links a:hover {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #333;
+    background-color: #011627;
     padding: 2vw;
     border-top-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-text h3 {
@@ -827,7 +831,7 @@ nav .links a:hover {
 }
 
 .scrollerdiv {
-    height: 60vh;
+    min-height: 60vh;
     width: 100%;
     /* background-color: #121619; */
     overflow: hidden;
@@ -856,7 +860,7 @@ nav .links a:hover {
 }
 
 .scrollerdiv .firstbox {
-    height: 35vh;
+    min-height: 35vh;
     width: 25%;
     background-color: #011627;
     border-radius: 1rem;
@@ -874,6 +878,14 @@ nav .links a:hover {
     width: 3.5vw;
     border-radius: 50%;
     border: 1px solid white;
+}
+.firstbox .boxlogo{
+    height: 4vw;
+    width: 100%;
+    background-color: #00BFA6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .firstbox h4 {
@@ -996,7 +1008,7 @@ nav .links a:hover {
 
 
 footer {
-    height: 70vh;
+    min-height: 70vh;
     width: 100%;
     background-color: #000;
     display: flex;
@@ -1013,14 +1025,16 @@ footer {
     flex-direction: column;
     gap: 1vw;
 }
-
+.footbox1{
+    min-height: 60vh;
+}
 .footbox1 img {
     width: 40%;
 }
 
 .footicon {
     display: flex;
-    gap: 2vw;
+    gap: 1vw;
 }
 
 .footicon i {
@@ -1073,7 +1087,7 @@ footer {
     gap: 1vw;
 }
 .copyright{
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
     background-color: #000;
     display: flex;
@@ -1227,9 +1241,9 @@ footer {
 
     .img-div {
         flex-direction: column;
-        min-height: 44vh;
+        min-height: 60vh;
         width: 100%;
-        margin-top: 95vw;
+        /* margin-top: 95vw; */
     }
 
     .img-div .imgbox {
@@ -1447,7 +1461,7 @@ footer {
     .scroll-content {
         display: flex;
         gap: 5vw;
-        animation: scroller 10s linear infinite;
+        animation: scroller 30s linear infinite;
     }
 
     /* Styling for the text */

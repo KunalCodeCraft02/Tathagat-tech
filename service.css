@@ -29,7 +29,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #121619;
+    background-color: #353535;
     color: white;
     font-family: Poppins;
     overflow-x: hidden;
@@ -322,7 +322,7 @@ nav .links a:hover {
 
 
 footer {
-    height: 70vh;
+    min-height: 70vh;
     width: 100%;
     background-color: #000;
     display: flex;
@@ -330,6 +330,7 @@ footer {
     padding: 4vw;
     border-bottom: 2px solid white;
     margin-top: 4vw;
+    gap: 3vw;
 }
 
 .footbox {
@@ -400,7 +401,7 @@ footer {
     gap: 1vw;
 }
 .copyright{
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
     background-color: #000;
     display: flex;
@@ -524,8 +525,10 @@ footer {
         flex-direction: column;
     }
     #page3{
-        margin-top: 20vw;
+        /* margin-top: 20vw; */
+        min-height: 210vh;
     }
+    
     .third{
         flex-direction: column;
         gap: 4vw;

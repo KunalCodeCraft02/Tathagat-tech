@@ -29,7 +29,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #121619;
+    background-color: #353535;
     color: white;
     font-family: Poppins;
     overflow-x: hidden;
@@ -233,6 +233,7 @@ nav .links a:hover {
 
 .heading{
     text-align: center;
+    margin-top: 3vw;
 
 
    
@@ -395,12 +396,12 @@ nav .links a:hover {
     align-items: center;
     flex-wrap: wrap;
     padding: 5vw;
-    background-color: #121619;
+    background-color: #353535;
 }
 
 
 #page4 .cardemp {
-    width: 260px;
+    width: 270px;
     height: 320px;
     background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
     border-radius: 20px;
@@ -408,7 +409,7 @@ nav .links a:hover {
 }
 
 #page4 .cardemp2 {
-    width: 260px;
+    width: 270px;
     height: 320px;
     background-color: #011627;
     /* border-radius:; */
@@ -483,7 +484,7 @@ nav .links a:hover {
   
 }
 .vision{
-    height: 40vh;
+    min-height: 35vh;
     width: 45%;
     background-color: #011627;
     padding: 1.2vw;
@@ -496,7 +497,7 @@ nav .links a:hover {
     text-align: center;
 }
 .mission{
-    height: 30vh;
+    min-height: 35vh;
     width: 45%;
     background-color: #011627;
     padding: 1.2vw;
@@ -602,7 +603,7 @@ nav .links a:hover {
 
 
 footer {
-    height: 70vh;
+    min-height: 70vh;
     width: 100%;
     background-color: #000;
     display: flex;
@@ -679,7 +680,7 @@ footer {
     gap: 1vw;
 }
 .copyright{
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
     background-color: #000;
     display: flex;
@@ -818,10 +819,14 @@ footer {
     }
     .vision{
         width: 100%;
+        font-size: 14px;
+        padding: 4vw;
     }
     .mission{
         margin-top: 5vw;
         width: 100%;
+        font-size: 14px;
+        padding: 4vw;
     }
     .bottom_content i {
         font-size: 7vw;
@@ -831,6 +836,7 @@ footer {
         min-height: 95vh;
         flex-direction: column;
         margin-top: 25vw;
+        gap: 3vw;
     }
     .footbox1{
         min-height: 20vh;
