@@ -195,7 +195,7 @@ nav .links a:hover {
 /* page2  */
 
 #page2 {
-    height: 90vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
 }
@@ -928,7 +928,7 @@ nav .links a:hover {
 
 
 .contactdiv {
-    height: 60vh;
+    min-height: 60vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1158,7 +1158,7 @@ footer {
     /* page2  */
 
     #page2 {
-        height: 50vh;
+        min-height: 50vh;
         width: 100%;
         position: relative;
     }
@@ -1414,16 +1414,23 @@ footer {
 
     .contactdiv {
         padding: 3vw;
+       
     }
 
     .contactdiv span {
         color: wheat;
         font-size: 4.1vw;
     }
-
-    .contactdiv button {
-        margin-top: 3.5vw;
+    .contactdiv h1{
+        font-size: 6vw;
+        margin-top: 2vw;
+        padding-bottom: 3vw;
+        
     }
+
+    /* .contactdiv button {
+       
+    } */
 
     .top_header {
         padding: 1rem;
