@@ -525,7 +525,7 @@ footer {
         flex-direction: column;
     }
     #page3{
-        /* margin-top: 20vw; */
+        margin-top: 20vw;
         min-height: 210vh;
     }
     
